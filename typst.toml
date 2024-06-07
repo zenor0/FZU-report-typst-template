@@ -1,0 +1,16 @@
+[package]
+name = "fzu-report"
+version = "0.1.0"
+entrypoint = "fzu-report/lib.typ"
+authors = ["zenor0"]
+license = "MIT"
+description = "福州大学非官方自用实验报告模板。UNOFFICIAL Fuzhou University report template."
+repository = "https://github.com/zenor0/FZU-report-typst-template"
+keywords = ["fzu", "report", "template", "typst"]
+categories = ["report"]
+exclude = []
+
+[template]
+path = "examples"
+entrypoint = "example.typ"
+thumbnail = "example.png"
