@@ -20,6 +20,7 @@
   thesisname: "title",
   date: datetime(year: 2021, month: 9, day: 1),
   enable-header: true,
+  header: none,
   cnabstract: none,
   cnkeywords: none,
   enabstract: none,
@@ -67,7 +68,22 @@
   }
   
   // 正文
-  show: main-body-report-conf.with(enable-header: enable-header, header: thesisname)
+  if header == none {
+    header = thesisname
+  }
+  let my-header = box()[#grid(
+    columns: (1fr, 1fr),
+    align: (left, right),
+    grid(columns: 2, 
+    align: horizon+center, 
+      gutter: 1em,
+      box(image("../assets/logos/fzu-text-zhcn-black.svg", height: 1.1em)),
+      box(image("../assets/logos/fzu-text-enus-black.svg", height: 0.7em))
+    ),
+    box(inset: 2pt)[#header | #studentID #author],
+  )]
+
+  show: main-body-report-conf.with(enable-header: enable-header, header: my-header)
   show: setup-lovelace
   show: codly-init.with()
   codly(
