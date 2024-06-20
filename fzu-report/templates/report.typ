@@ -18,6 +18,7 @@
   major: "信息安全",
   advisor: "你的老师",
   thesisname: "title",
+  major-title: "实验报告",
   date: datetime(year: 2021, month: 9, day: 1),
   enable-header: true,
   header: none,
@@ -40,6 +41,7 @@
     school: school,
     major: major,
     advisor: advisor,
+    major-title: major-title,
     thesisname: thesisname,
     date: date,
   )
@@ -118,7 +120,7 @@
   outlinedepth: 3,
 )
 
-
+= CH1
 ```python
 from rich import print
 print("Hello, World!")
@@ -140,7 +142,7 @@ int main() {
 }
 
 ```
-
+= ch2
 ```rust
 fn main() {
     println!("Hello, World!");

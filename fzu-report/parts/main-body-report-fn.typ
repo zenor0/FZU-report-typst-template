@@ -34,7 +34,7 @@
     outset: (y: 3pt), 
     radius: 3pt
     )[#text(size: 10pt)[#it]])
-  show raw: set text(font: 字体.代码, size: 10pt, weight: "bold")
+  show raw: set text(font: 字体.代码, size: 10pt)
   pagebreak(weak: false)
   
 

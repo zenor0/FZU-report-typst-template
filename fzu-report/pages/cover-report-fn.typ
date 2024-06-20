@@ -8,6 +8,7 @@
   major: "信息安全",
   advisor: "你的老师",
   thesisname: "title",
+  major-title: "实验报告",
   date: (year: 2021, month: 9, day: 1),
 ) = page(paper: "a4", margin: (top: 2cm+0.7cm, bottom: 1cm, left: 2cm + 0.5cm, right: 2cm))[
 
@@ -20,7 +21,7 @@
   #image("../assets/logos/fzu-text-logo.svg", width: 10cm)
   #v(40pt)
   #block(height: 2cm, {
-    text(font: 字体.黑体, size: 40pt, fakebold[实验报告])
+    text(font: 字体.黑体, size: 40pt, fakebold[#major-title])
   })
   
   #v(20pt)
